@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explicación de Métodos de Array en JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Explicación de Métodos de Array en JavaScript</h1>
+
+    <h2>1. map()</h2>
+    <p>
+      El método <code>map()</code> crea un nuevo array con los resultados de
+      llamar a una función proporcionada en cada elemento del array.
+    </p>
+    <p><strong>Ejemplo:</strong></p>
+    <pre>
+    <code>
+      const numbers = [1, 2, 3];
+      const doubled = numbers.map((num) => num * 2);
+      console.log(doubled); // Output: [2, 4, 6]
+    </code>
+  </pre>
+
+    <h2>2. filter()</h2>
+    <p>
+      El método <code>filter()</code> crea un nuevo array con todos los
+      elementos que pasan la prueba implementada por la función proporcionada.
+    </p>
+    <p><strong>Ejemplo:</strong></p>
+    <pre>
+    <code>
+      const numbers = [1, 2, 3, 4, 5];
+      const evenNumbers = numbers.filter((num) => num % 2 === 0);
+      console.log(evenNumbers); // Output: [2, 4]
+    </code>
+  </pre>
+
+    <h2>3. find()</h2>
+    <p>
+      El método <code>find()</code> devuelve el primer elemento en el array que
+      cumple con la función de prueba proporcionada.
+    </p>
+    <p><strong>Ejemplo:</strong></p>
+    <pre>
+    <code>
+      const numbers = [1, 2, 3, 4, 5];
+      const firstEvenNumber = numbers.find((num) => num % 2 === 0);
+      console.log(firstEvenNumber); // Output: 2
+    </code>
+  </pre>
+
+    <h2>4. some()</h2>
+    <p>
+      El método <code>some()</code> comprueba si al menos un elemento del array
+      cumple con la función de prueba proporcionada.
+    </p>
+    <p><strong>Ejemplo:</strong></p>
+    <pre>
+    <code>
+      const numbers = [1, 2, 3, 4, 5];
+      const hasEvenNumber = numbers.some((num) => num % 2 === 0);
+      console.log(hasEvenNumber); // Output: true
+    </code>
+  </pre>
+
+    <h2>5. every()</h2>
+    <p>
+      El método <code>every()</code> comprueba si todos los elementos del array
+      cumplen con la función de prueba proporcionada.
+    </p>
+    <p><strong>Ejemplo:</strong></p>
+    <pre>
+    <code>
+      const numbers = [2, 4, 6, 8, 10];
+      const allEvenNumbers = numbers.every((num) => num % 2 === 0);
+      console.log(allEvenNumbers); // Output: true
+    </code>
+  </pre>
+  <script src="script.js"></script>
+  </body>
+</html>
